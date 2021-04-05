@@ -26,30 +26,63 @@
 
     <main>
         <div class="flex-container">
-            <div class="flex-container__var"> Учебная группа: 191-361, Вариант: 4</div>
+            <div class="flex-container__var">
+                <p> Учебная группа: 191-361, Вариант: 4</p>
+            </div>
         </div>
         <div class="main-form" style="text-align: center;">
-            <h1>Регистрация на сайте</h1>
+            <h1>
+                <p>Регистрация на сайте</p>
+            </h1>
             <form name="contact_form" method="post" action="dumb.htm" onsubmit="return validate_form ( );">
                 <div class="flex-container-form">
 
-                    <div>Введите Ваше имя:</div>
+                    <div>
+                        <p>Введите Ваше имя::</p>
+                    </div>
                     <input required type="text" pattern="^[А-Яа-яЁё\s]+$" placeholder="Имя">
-                    <div>Введите Вашу фамилию:</div>
+                    <div>
+                        <p>Введите Вашу фамилию:</p>
+                    </div>
                     <input type="text" pattern="^[А-Яа-яЁё\s]+$" placeholder="Фамилия">
-                    <div>Введите Ваше отчество:</div>
+                    <div>
+                        <p>Введите Ваше отчество:</p>
+                    </div>
                     <input type="text" pattern="^[А-Яа-яЁё\s]+$" placeholder="Отчество">
-                    <div>Придумайте и впишите Ваш персональный логин для входа на сайт:</div>
+                    <div>
+                        <p>Придумайте и впишите Ваш персональный логин для входа на сайт:</p>
+                    </div>
                     <input required type="text" placeholder="Логин">
-                    <div>Придумайте и впишите Ваш персональный пароль для входа на сайт:</div>
+                    <div>
+                        <p>Придумайте и впишите Ваш персональный пароль для входа на сайт:</p>
+                    </div>
                     <input required type="password" placeholder="Пароль">
-                    <div>Введите Вашу почту для получения рассылок от нашей компании</div>
+                    <div>
+                        <p>Введите Вашу почту для получения рассылок от нашей компании</p>
+                    </div>
                     <input type="email" placeholder="Почта">
-                    <div>Если все поля заполнены корректно, нажмите на кнопку "Отправить" для завершения регистрации</div>
-                    <p id="registration-complete"><input type="submit" value="Отправить"></p>
+                    <div>
+                        <p>Если все поля заполнены корректно, нажмите на кнопку "Отправить" для завершения регистрации</p>
+                    </div>
+                    <a id="registration-complete" href="index.html"><input type="submit" value="Отправить"></a>
 
                 </div>
             </form>
+
+            <div class="add-text">
+                <div class="add-text__item"><img class="shark" alt="shark" src="imgs/shark-1454245_960_720.png" width="200"></div>
+                <div class="add-text__item">
+                    <p>
+                        <h2>Правила игры:</h2>
+                        <p style="text-align:justify;">
+                            Вы стали <span style="font-weight: bold; font-size: 20px;">КАПИТАНОМ</span> коробля, ваша основная задача - забота о своем экипаже, а именно кормить их. <span style="font-weight: bold; font-size: 20px;">Ловите рыбу</span>,
+                            чтобы прокормить своих подчиненных. Чем рыба больше - тем опасней, но при этом вкуснее и сытнее.
+                        </p>
+                    </p>
+                </div>
+                <div class="add-text__item"><img alt="shark" src="imgs/trout-294469_960_720.png"></div>
+                <div class="add-text__item"><img alt="shark" src="imgs/sailing-37724_960_720.png"></div>
+            </div>
         </div>
     </main>
 
