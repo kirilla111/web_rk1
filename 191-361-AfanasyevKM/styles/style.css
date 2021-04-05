@@ -5,11 +5,14 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+header {
+    background-color: lightblue;
+}
+
 .flex-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: lightblue;
 }
 
 .flex-container__game-name {
@@ -25,6 +28,49 @@ body {
     margin-top: 24px;
     margin-bottom: 20px;
     font-size: 32px;
+}
+
+.flex-container__var {
+    margin-top: 20px;
+    margin-left: 10%;
+    font-size: 22px;
+}
+
+.main-form {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30px;
+}
+
+.form {
+    align-items: center;
+    grid-area: top;
+}
+
+.form input {
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.buttons {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-direction: row;
+    grid-area: bot;
+}
+
+.grid-container {
+    padding: 40px;
+    display: grid;
+    background-color: lightblue;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    justify-items: center;
+    grid-gap: 5%;
+    grid-template-areas: "top top" "bot bot";
 }
 
 @media (max-width:450px) {
