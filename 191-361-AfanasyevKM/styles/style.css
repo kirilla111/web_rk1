@@ -44,7 +44,6 @@ header {
 
 .form {
     align-items: center;
-    grid-area: top;
 }
 
 .form input {
@@ -52,29 +51,86 @@ header {
     margin-left: 10px;
 }
 
-.buttons {
-    height: 40px;
-    width: 100%;
+.login-password {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 50px;
-    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    grid-area: top;
+}
+
+.buttons {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
     grid-area: bot;
 }
 
+.buttons input {
+    height: 60px;
+    font-size: 22px;
+}
+
+.buttons input:hover {
+    height: 60px;
+    font-size: 22px;
+    background-color: darksalmon;
+}
+
 .grid-container {
-    padding: 40px;
+    padding: 20px;
     display: grid;
     background-color: lightblue;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 200px);
+    grid-template-rows: repeat(3, 200px);
     justify-items: center;
-    grid-gap: 5%;
-    grid-template-areas: "top top" "bot bot";
+    grid-gap: 20px;
+    grid-template-areas: "top top" "bot bot" "bot bot";
 }
 
-@media (max-width:450px) {
+.flex-container-form {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    gap: 20px;
+}
+
+.flex-container-form input {
+    padding: 5px;
+    height: 30px;
+}
+
+
+/*--------------------------------MEDIA--------------------------------*/
+
+@media (max-width:600px) {
+    .main-form {
+        margin-left: 0;
+        margin-right: 0;
+    }
     .flex-container {
         flex-direction: column;
+        gap: 10px;
+        padding: 0px;
+    }
+    .grid-container {
+        grid-template-rows: repeat(3, 250px);
+    }
+    #go-to-form input {
+        max-width: 200px;
+        font-size: 14px;
+    }
+    .buttons {
+        width: 80%;
+    }
+    .buttons input {
+        font-size: 14px;
     }
 }
