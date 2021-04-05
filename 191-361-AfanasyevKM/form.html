@@ -30,23 +30,26 @@
         </div>
         <div class="main-form" style="text-align: center;">
             <h1>Регистрация на сайте</h1>
-            <div class="flex-container-form">
-                <div>Введите Ваше имя:</div>
-                <input required type="text" placeholder="Имя">
-                <div>Введите Вашу фамилию:</div>
-                <input type="text" placeholder="Фамилия">
-                <div>Введите Ваше отчество:</div>
-                <input type="text" placeholder="Отчество">
-                <div>Придумайте и впишите ваш персональный логин для входа на сайт:</div>
-                <input required type="text" placeholder="Логин">
-                <div>Придумайте и впишите ваш персональный пароль для входа на сайт:</div>
-                <input required type="text" placeholder="Пароль">
-                <div>Введите вашу почту для получения рассылок от нашей компании</div>
-                <input type="text" placeholder="Почта">
-                <a id="go-to-form" href="form.html"><input type="submit" value="Регистрация на сайте"></a>
-            </div>
-        </div>
-        </div>
+            <form name="contact_form" method="post" action="dumb.htm" onsubmit="return validate_form ( );">
+                <div class="flex-container-form">
+
+                    <div>Введите Ваше имя:</div>
+                    <input required type="text" pattern="^[А-Яа-яЁё\s]+$" placeholder="Имя">
+                    <div>Введите Вашу фамилию:</div>
+                    <input type="text" pattern="^[А-Яа-яЁё\s]+$" placeholder="Фамилия">
+                    <div>Введите Ваше отчество:</div>
+                    <input type="text" pattern="^[А-Яа-яЁё\s]+$" placeholder="Отчество">
+                    <div>Придумайте и впишите Ваш персональный логин для входа на сайт:</div>
+                    <input required type="text" placeholder="Логин">
+                    <div>Придумайте и впишите Ваш персональный пароль для входа на сайт:</div>
+                    <input required type="password" placeholder="Пароль">
+                    <div>Введите Вашу почту для получения рассылок от нашей компании</div>
+                    <input type="email" placeholder="Почта">
+                    <div>Если все поля заполнены корректно, нажмите на кнопку "Отправить" для завершения регистрации</div>
+                    <p id="registration-complete"><input type="submit" value="Отправить"></p>
+
+                </div>
+            </form>
         </div>
     </main>
 
